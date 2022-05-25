@@ -1,0 +1,29 @@
+
+<div class="col-md-4 mx-auto mt-4">
+  <div class="card text-center">
+    <div class="card-header">
+      <h3>BANCO GUAYAQUIL</h3>
+      <h2>(DEPOSITO Y RETIROS)</h2>
+    </div>
+    <div class="card-body">
+      <form action="/guayaquil/transacciones_guayaquil" method="POST">
+        <div class="form-group">
+            <select class="custom-select" name="title" id="inputGroupSelect02">
+              <option selected>Selecciona una opcion </option>
+              <option value="Deposito">Deposito</option>
+              <option value="Retiro">Retiro</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <textarea name="cantidad" class="form-control" placeholder="Cantidad"></textarea>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" type="submit">
+            Guardar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,60 @@
+<div class="row mt-4 mb-4">
+    <div class="col-sm">
+        <h4>TRANSACCIONES Guayaquil</h4>
+    </div>
+    <div class="col-sm">
+        <h4>Cantidad de transacciones =</h4> 
+    </div>
+    <div class="col-sm">
+        <h4>Saldo = {{acum}}</h4>
+    </div>
+</div>
+
+
+
+  <div class="table-responsive">
+    <table class="table table-striped table-sm">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Descripcion</th>
+        <th>Hora</th>
+        <th>Fecha</th>
+        <th>Banco</th>
+        <th>Cantidad</th>
+      </tr>
+      </thead>
+      <tbody>
+      {{#each transaccions}}
+        <tr>
+          <td>0</td>
+          <td>{{ title }}</td>
+          <td>{{ time }}</td>
+          <td>{{ date }}</td>
+          <td>{{ banco }}</td>
+          <td>{{ cantidad }}</td>
+        </tr>
+      {{/each}}
+        <tr>
+          <td>--</td>
+          <td>--</td>
+          <td>Total retiros</td>
+          <td>{{acumaume}}</td>
+          <td>--</td>
+        </tr>
+        <tr>
+          <td>--</td>
+          <td>--</td>
+          <td>Total depositos</td>
+          <td>{{acumdism}}</td>
+          <td>--</td>
+        </tr> 
+        <tr>
+          <td>TOTAL</td>
+          <td>--</td>
+          <td>--</td>
+          <td>--</td>
+          <td>{{acum}}</td>
+        </tr>       
+      </tbody>
+  </div>
